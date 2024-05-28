@@ -264,7 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07559759e24a5d84cb830dbdb27a37ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Run: 1
   cam: {fileID: 963194227}
   PlayPower: 16
 --- !u!1 &705507993
