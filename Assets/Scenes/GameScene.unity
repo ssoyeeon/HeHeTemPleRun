@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 465552254}
   - component: {fileID: 465552253}
   - component: {fileID: 465552257}
+  - component: {fileID: 465552258}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Ground
@@ -251,6 +252,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.999999, y: 2.2204458e-16, z: 9.999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &465552258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465552252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07559759e24a5d84cb830dbdb27a37ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Run: 1
+  cam: {fileID: 963194227}
+  PlayPower: 16
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,11 +447,11 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -8}
+  m_LocalPosition: {x: 0, y: 2.5, z: -145.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1565288201}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1565288196
 GameObject:
@@ -557,8 +573,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.5, z: -137.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 963194228}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1565288202
@@ -595,3 +610,4 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 465552256}
   - {fileID: 1565288201}
+  - {fileID: 963194228}

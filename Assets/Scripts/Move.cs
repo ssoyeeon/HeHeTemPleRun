@@ -14,20 +14,17 @@ public class Move : MonoBehaviour
 
     private bool IsJumping;
     private bool IsSit;
-    private bool _Run;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
         IsJumping = false;
-        _Run = true;
     }
 
     void Update()
     {
         Jump();
         Sit();
-        Run();
         LR();
     }
 
@@ -35,23 +32,12 @@ public class Move : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log("실행");
             transform.Rotate(new Vector3(0f, -90f, 0f));
         }
 
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("실행행");
             transform.Rotate(new Vector3(0f, 90f, 0f));
-        }
-    }
-
-    void Run()
-    {
-        if (_Run == true)
-        {
-            Vector3 dir = cam.transform.localRotation * Vector3.forward;
-            gameObject.transform.Translate(dir * PlayPower * Time.deltaTime);
         }
     }
 
